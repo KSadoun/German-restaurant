@@ -1,0 +1,65 @@
+@media (max-width: 767.98px) {
+    .events {
+      width: 100% !important;
+    }
+    html, body{
+        font-size: 10px;;
+    }
+  }
+.event{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.event:hover div .shad{
+    box-shadow: 0 0 20px 2px  grey;
+}
+.event:hover .hover{
+    background-color: orange;
+    color: white;
+}
+
+html, body{
+    font-size: 14px;
+}
+.banner1{
+    background-image: url("interface.jpg"); background-size: cover;
+}
+
+.form{
+    border: 1px solid grey;
+}
+
+.event{
+    margin-bottom: 70px;
+}
+
+.desc{
+    z-index: 5;
+}
+
+/* animations */
+@keyframes cta {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+.ripple{animation: cta 1.5s infinite;}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.footer{
+    background-color: #131d23;
+}
